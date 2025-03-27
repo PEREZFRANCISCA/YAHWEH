@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    head>
+    <link href="/website/css/uicons-" rel="stylesheet">
+    <link href="destinos.html" rel="destinos">
+
+</head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agencia de Viajes</title>
+<link rel="stylesheet" href="Style.css">
+<style>
+    /* Menú en forma horizontal */
+    
+    .menu {
+        display: flex;
+        justify-content: center;
+        background-color: #333;
+        padding: 10px 0;
+    }
+    
+    .menu a {
+        color: white;
+        text-decoration: none;
+        padding: 14px 20px;
+        font-size: 18px;
+    }
+    
+    .menu a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+    }
+    /* Estilos para el contenedor del menú */
+    
+    .menu {
+        background-color: #333;
+        /* Color de fondo del menú */
+        overflow: hidden;
+        /* Asegura que los elementos dentro del menú se alineen correctamente */
+    }
+    /* Estilos para los enlaces del menú */
+    
+    .menu a {
+        float: left;
+        /* Alinea los enlaces a la izquierda */
+        display: block;
+        /* Hace que cada enlace ocupe toda la altura del menú */
+        color: white;
+        /* Color del texto */
+        text-align: center;
+        /* Centra el texto dentro del enlace */
+        padding: 14px 16px;
+        /* Espaciado interno del enlace */
+        text-decoration: none;
+        /* Elimina el subrayado de los enlaces */
+    }
+    /* Estilo para los enlaces al pasar el mouse */
+    
+    .menu a:hover {
+        background-color: #ddd;
+        /* Color de fondo al pasar el mouse */
+        color: black;
+        /* Color del texto al pasar el mouse */
+    }
+    
+    body {
+        background-image: url('fondo.jpg');
+        background-size: cover;
+        color: white;
+    }
+    
+    header {
+        text-align: center;
+        padding: 20px;
+        background-color: #3CB371;
+        /* Verde manzana */
+    }
+    
+    #logo {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 5px solid white;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    nav ul li {
+        margin: 0 15px;
+    }
+    
+    .menu-icon {
+        margin-right: 10px;
+    }
+    
+    .circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: inline-block;
+        margin: 10px;
+    }
+    
+    .circle img {
+        width: 100%;
+        height: auto;
+    }
+    
+    #contactForm {
+        border: 2px solid white;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+    .scroll-buttons {
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .scroll-buttons button {
+        margin: 5px;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: #007BFF;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .scroll-buttons button:hover {
+        background-color: #0056b3;
+    }
+    
+    .card {
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+        padding: 20px;
+        margin: 10px;
+        text-align: center;
+        width: 200px;
+        /* Ancho de la tarjeta */
+        display: inline-block;
+        /* Para que se alineen horizontalmente */
+    }
+    
+    #chatbox {
+        display: none;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    .faq-questions {
+        margin-top: 10px;
+    }
+    
+    .faq-questions p {
+        margin: 5px 0;
+        cursor: pointer;
+    }
+</style>
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="logo yhwh.jpg" alt="Logo YHWH TOURS & TRAVELS">
+
+        <h1>YHWH TOURS & TRAVELS</h1>
+        <nav>
+
+
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#destinos">Destinos</a></li>
+                <li><a href="#Paquetes">Paquetes</a></li>
+                <li><a href="#ofertas">Ofertas</a></li>
+                <li><a href="#Hoteles">Difentes Hoteles</a></li>
+                <li><a href="#asesoria">Asesoría Personalizada</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <center>
+                <h2>Bienvenido a nuestra Agencia</h2>
+                <p>Descubre los mejores resorts y ofertas para tus vacaciones.</p>
+                <div style="text-align:center;">
+                    <div style="background-color: rgba(0, 0, 0, 0.7); padding: 20px; border-radius: 10px; margin: 10px;">
+                        <img src="resort.jpg" alt="">
+                        <h4>Resort</h4>
+                        <p>Descubre el paraíso en nuestro exclusivo resort, un destino idóneo para aquellos que buscan relajación y aventura en un solo lugar. Situado frente a playas de arena blanca y aguas cristalinas, nuestro complejo ofrece lujosas habitaciones
+                            con vistas espectaculares, una amplia variedad de restaurantes gourmet y actividades para todas las edades. Desde relajantes tratamientos de spa hasta emocionantes deportes acuáticos, cada rincón de nuestro resort está diseñado
+                            para brindarte una experiencia inolvidable. Ya sea que desees disfrutar de un día de sol en la piscina infinita o explorar la cultura local, aquí encontrarás el equilibrio perfecto entre confort y diversión. ¡Reserva tu escapada
+                            hoy y déjate llevar por la magia de este destino único!</p>
+
+
+                    </div>
+                    <div style="background-color: rgba(0, 0, 0, 0.7); padding: 20px; border-radius: 10px; margin: 10px;">
+                        <img src="vuelo.jpg" alt="">
+                        <h4>Vuelos</h4>
+                        <p>Descubre la magia de Colombia y otros destinos fascinantes con nuestra agencia de viajes, donde cada vuelo es el inicio de una aventura inolvidable. Desde las vibrantes calles de Bogotá hasta las hermosas playas de Cartagena, Colombia
+                            te ofrece una diversidad cultural y paisajes impresionantes que te dejarán sin aliento. Pero eso no es todo; también organizamos viajes a otros países que te permitirán explorar la rica historia de Perú, Con nosotros, cada
+                            viaje se convierte en una experiencia única, llena de emociones y descubrimientos, todo con la comodidad y seguridad que mereces. ¡Embárcate en tu próxima aventura y deja que el mundo te sorprenda!</p>
+                    </div>
+            </center>
+            </div>
+        </section>
+
+        <section id="destinos">
+            <h2>Destinos</h2>
+            <div class="card">
+                <img src="puerto plata.jpg" alt="Destino 1" style="width:100%; border-radius: 10px;">
+                <p>Puerto Plata</p>
+            </div>
+            <div class="card">
+                <img src="punta cana.jpg" alt="Destino 2" style="width:100%; border-radius: 10px;">
+                <p>Punta Cana</p>
+            </div>
+            <div class="card">
+                <img src="la romana.jpg" alt="Destino 3" style="width:100%; border-radius: 10px;">
+                <p>La Romana</p>
+            </div>
+            <div class="card">
+                <img src="samana2..jpg" alt="Destino 4" style="width:100%; border-radius: 10px;">
+                <p>Samana</p>
+            </div>
+            <div class="card">
+                <img src="sur.jpg" alt="Destino 5" style="width:100%; border-radius: 10px;">
+                <p>El Sur</p>
+            </div>
+        </section>
+
+
+        <section id="Paquetes de Vacaciones ">
+            <center>
+                <h2>Paquetes de vacaciones </h2>
+                <div class="card">
+                    <img src="v. familia.jpg" alt="Destino 1" style="width:100%; border-radius: 10px;">
+                    <p>Paquete para Familia</p>
+                </div>
+                <div class="card">
+                    <img src="v.parejas.jpg" alt="Destino 2" style="width:100%; border-radius: 10px;">
+                    <p>Paquete de Parejas</p>
+                </div>
+                <div class="card">
+                    <img src="v. bodas.jpg" alt="Destino 3" style="width:100%; border-radius: 10px;">
+                    <p>Paquete de Bodas</p>
+
+                </div>
+            </center>
+
+        </section>
+
+
+        <section id="ofertas">
+            <center>
+                <h2>Ofertas</h2>
+
+            </center>
+            <section id="Hoteles">
+                <center>
+                    <h2>Ofertas de la senana </h2>
+                    <div class="card">
+
+                        <img src="h..jpg" alt="Destino 1" style="width:100%; border-radius: 10px;">
+
+
+
+                    </div>
+                    <div class="card">
+                        <img src="h.v5.jpg" alt="Destino 1" style="width:100%; border-radius: 10px;">
+
+
+                    </div>
+                    <div class="card">
+                        <img src="h.v3.jpg" alt="Destino 2" style="width:100%; border-radius: 10px;">
+
+                    </div>
+                </center>
+
+            </section>
+        </section>
+
+        <section id="Hoteles">
+            <center>
+                <h2>Diferentes Hoteles</h2>
+                <div class="card">
+
+                    <img src="2 estrella.jpg" alt="Destino 1" style="width:100%; border-radius: 10px;">
+                    <h4> 3 Estrella</h4>
+
+
+                </div>
+                <div class="card">
+                    <img src="4 estrella.jpg" alt="Destino 1" style="width:100%; border-radius: 10px;">
+                    <h4>4 Estrella</h4>
+
+                </div>
+                <div class="card">
+                    <img src="5 estrellla.jpg" alt="Destino 2" style="width:100%; border-radius: 10px;">
+                    <h4>5 Estrella </h4>
+                </div>
+            </center>
+
+        </section>
+
+        <section id="asesoria">
+            <h2>Asesoría Personalizada</h2>
+            <p>Consulta con un agente o usa nuestro chatbot.</p>
+            <div id="chatbot">
+                <button onclick="toggleChat()">Chatbot</button>
+                <div id="chatbox">
+                    <p>Hola! ¿Cómo puedo ayudarte hoy?</p>
+                    <div class="faq-questions">
+                        <p onclick="alert('Pregunta 1: ¿Cuáles son los destinos más populares?')">1. ¿Cuáles son los destinos más populares?</p>
+                        <p onclick="alert('Pregunta 2: ¿Cómo reservo un viaje?')">2. ¿Cómo reservo un viaje?</p>
+                        <p onclick="alert('Pregunta 3: ¿Qué incluye el paquete?')">3. ¿Qué incluye el paquete?</p>
+                        <p onclick="alert('Pregunta 4: ¿Cuáles son las políticas de cancelación?')">4. ¿Cuáles son las políticas de cancelación?</p>
+                        <p onclick="alert('Pregunta 5: ¿Cómo contacto al servicio al cliente?')">5. ¿Cómo contacto al servicio al cliente?</p>
+                        <p onclick="alert('Pregunta 6: ¿Se ofrecen seguros de viaje?')">6. ¿Se ofrecen seguros de viaje?</p>
+                        <p onclick="alert('Pregunta 7: ¿Qué hacer si tengo un problema en el viaje?')">7. ¿Qué hacer si tengo un problema en el viaje?</p>
+                        <p onclick="alert('Pregunta 8: ¿Puedo modificar mi reserva?')">8. ¿Puedo modificar mi reserva?</p>
+                    </div>
+                </div>
+            </div>
+            <div id="whatsapp">
+                <a href="http://wa.me/18297086090" target="_blank">Contáctanos por WhatsApp</a>
+            </div>
+        </section>
+
+        <section id="blog">
+            <h2>Blog</h2>
+            <p>Consejos de viaje y experiencias de clientes.</p>
+            <p>Estar a la 12: 00 pm para la entrega de habitaciones</p>
+        </section>
+
+        <section id="contacto">
+            <h2>Formulario de Contacto</h2>
+            <form id="contactForm">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section id="sobre-nosotros">
+            <center>
+                <h1>Sobre Nosotros</h1>
+                <p>Conoce nuestra historia y equipo.</p>
+                <section id="Paquetes de Vacaciones ">
+
+
+                    <div class="card">
+                        <img src="logo yhwh.jpg" alt="Destino 1" style="width:100%; border-radius: 10px;">
+                        <h4>Historia</h4>
+                        <p>YHWH Tours & Travels es una Angencia de viaje que es fundada en san Cristóbal en el 10 de años 2022 por la CEO. Elena Marte De Paredes, con el objetivo de poder estar al cuidado de tus reservas y vuelos.</p>
+                    </div>
+                    <div class="card">
+                        <img src="ceo.yhwh.jpg" alt="Destino 2" style="width:100%; border-radius: 10px;">
+                        <h4>Nuestra Fundadora </h4>
+                        <p>Elena Marte De Paredes, es la fundadora de YHWH Tours & Travels es la encargada de responder tus mensajes y te reservas tus habitaciones.</p>
+                    </div>
+
+            </center>
+            </section>
+    </main>
+
+    <footer>
+        <i class="fi-sr-eye"></i>
+        <i class="fi fi-sr-marker"></i>
+        <i class="fi-sr-shopping-bag"></i>
+        <i class="fi-sr-envelope"></i>
+        <p>&copy; 2024 YHWH. Todos los derechos reservados.</p>
+    </footer>
+
+    <div class="scroll-buttons">
+        <button onclick="window.scrollTo(0, 0)">Subir</button>
+        <button onclick="window.scrollBy(0, window.innerHeight)">Bajar</button>
+        <button onclick="window.history.back()">Regresar</button>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function toggleChat() {
+            var chatbox = document.getElementById('chatbox');
+            chatbox.style.display = chatbox.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+
+</html>

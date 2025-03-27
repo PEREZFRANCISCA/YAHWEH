@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de Viajes</title>
+    <link rel="stylesheet" href="Style.css">
+    <style>
+        body {
+            background-image: url('fondo.jpg');
+            background-size: cover;
+            color: white;
+        }
+        
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #3CB371;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        .scroll-buttons {
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .scroll-buttons button {
+            margin: 5px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            font-family: 'Franklin Gothic', sans-serif;
+        }
+        
+        .scroll-buttons button:hover {
+            background-color: #0056b3;
+        }
+        
+        .card {
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            width: 250px;
+            display: inline-block;
+        }
+        
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        
+        h1 {
+            font-family: 'Franklin Gothic', sans-serif;
+        }
+        
+        h3 {
+            font-family: 'Franklin Gothic', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>OFERTAS</h1>
+        <nav>
+        </nav>
+    </header>
+    <center>
+        <section id="asesoria">
+            <h2>Asesoría Personalizada</h2>
+            <p>Consulta con un agente o usa nuestro chatbot.</p>
+            <div id="chatbot">
+                <button onclick="toggleChat()">Chatbot</button>
+                <div id="chatbox">
+                    <p>Hola! ¿Cómo puedo ayudarte hoy?</p>
+                    <div class="faq-questions">
+                        <p onclick="alert('Pregunta 1: ¿Cuáles son los destinos más populares?')">1. ¿Cuáles son los destinos más populares?</p>
+                        <p onclick="alert('Pregunta 2: ¿Cómo reservo un viaje?')">2. ¿Cómo reservo un viaje?</p>
+                        <p onclick="alert('Pregunta 3: ¿Qué incluye el paquete?')">3. ¿Qué incluye el paquete?</p>
+                        <p onclick="alert('Pregunta 4: ¿Cuáles son las políticas de cancelación?')">4. ¿Cuáles son las políticas de cancelación?</p>
+                        <p onclick="alert('Pregunta 5: ¿Cómo contacto al servicio al cliente?')">5. ¿Cómo contacto al servicio al cliente?</p>
+                        <p onclick="alert('Pregunta 6: ¿Se ofrecen seguros de viaje?')">6. ¿Se ofrecen seguros de viaje?</p>
+                        <p onclick="alert('Pregunta 7: ¿Qué hacer si tengo un problema en el viaje?')">7. ¿Qué hacer si tengo un problema en el viaje?</p>
+                        <p onclick="alert('Pregunta 8: ¿Puedo modificar mi reserva?')">8. ¿Puedo modificar mi reserva?</p>
+                    </div>
+                </div>
+            </div>
+            <div id="whatsapp">
+                <a href="http://wa.me/18297086090" target="_blank">Contáctanos por WhatsApp</a>
+            </div>
+        </section>
+
+    </center>
+
+    </section>
+    </section>
+
+    </center>
+
+    </section>
+    </head>
+</body>
+
+</html>
